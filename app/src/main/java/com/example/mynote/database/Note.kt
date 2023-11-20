@@ -11,7 +11,7 @@ data class Note(
     @NonNull
     val id: Int = 0,
     @ColumnInfo(name = "title")
-    val title: String = "",  // Menambahkan nilai default untuk title
+    val title: String = "",
     @ColumnInfo(name = "description")
     val description: String = "",
     @ColumnInfo(name = "date")
