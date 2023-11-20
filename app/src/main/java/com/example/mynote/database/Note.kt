@@ -9,11 +9,11 @@ import androidx.room.PrimaryKey
 data class Note(
     @PrimaryKey(autoGenerate = true)
     @NonNull
-    val id: Int=0,
+    val id: Int = 0,
     @ColumnInfo(name = "title")
-    val title: String,
+    val title: String = "",  // Menambahkan nilai default untuk title
     @ColumnInfo(name = "description")
-    val description: String,
+    val description: String = "",
     @ColumnInfo(name = "date")
-    val date: String
+    val date: String = ""
 )

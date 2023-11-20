@@ -3,45 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".ui.MainActivity">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context="com.example.mynote.ui.MainActivity"
+    android:padding="15dp">
+
+    <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:layout_height="match_parent"
-        tools:context=".ui.MainActivity">
-        <EditText
-            android:id="@+id/txt_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Title"/>
-        <EditText
-            android:id="@+id/txt_desc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Description"/>
-        <EditText
-            android:id="@+id/txt_date"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Tanggal"/>
-        <Button
-            android:id="@+id/btnnn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tambah Data"/>
-        <Button
-            android:id="@+id/btn_update"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Update Data"/>
-        <ListView
-            android:id="@+id/listView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-    </LinearLayout></LinearLayout>
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_open_add_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data"/>
+
+</LinearLayout>
